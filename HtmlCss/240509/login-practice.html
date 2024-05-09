@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            /* border:dashed;
+            padding: 8px;
+            width: 400px;
+            height: 200px;
+            position: relative; */
+            font-family: arial;
+            font-size: 24px;
+            margin: 25px;
+            width: 400px;
+            height: 200px;
+            outline: dashed 1px black;
+            /* 설정 */
+            position: relative;
+        }
+
+        .child{
+            /* border: dashed; */
+            width: 350px;
+            height: 140px;
+            background-color:#FFFF;
+            /* outline: 1px dimgray; */
+            border-style: solid;
+            border-width: 1px;
+            border-color: #dbdbdb;
+            /* 상하좌우 정중앙 정렬하기 */
+            position: absolute;
+            top: 30px;
+            left: 25px;
+            border-radius: 5px;
+        }
+
+        p{
+            font-size: 12px;
+            line-height: 15.02px;
+            width: 215px;
+            height: 15px;
+            position: relative;
+            top: 19px;
+            left: 16px;
+        }
+
+        button{
+            width: 318px;
+            height: 40px;
+            background-color: rebeccapurple;
+            position: absolute;
+            top: 50px;
+            left: 16px;
+            border-radius: 4px;
+            color: #FFFF;
+        }
+
+        img{
+            width: 64px;
+            height: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child">
+            <p>더 편리해진 위니브에 오신 것을 환영합니다.</p>
+            <button>
+                <img src="file:///Users/mac/Downloads/weniv-logo.png" alt="">
+                로그인
+            </button>
+        </div>
+    </div>
+</body>
+</html>
