@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            padding:20px;
+            margin-left: 0;
+        }
+        li{
+            padding: 20px;
+            margin: 20px;
+            margin-left: 0;
+            width: 50px;
+            height: 50px;
+            list-style: none;
+        }
+        .flex-container1{
+            display: flex;
+            flex-direction: column;;
+        }
+        .flex-container2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+            
+        }
+        .flex-container3{
+            display: flex;
+            flex-direction: column-reverse;
+            /* flex-flow: wrap flex-start; */
+            flex-wrap: wrap;
+            align-content: flex-end;
+        }
+        
+        .blue{
+            background-color:cornflowerblue;
+        }
+        .red{
+            background-color: indianred;
+        }
+        .yellow{
+            background-color: khaki;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="flex-container1">
+            <li class="blue">a</li>
+            <li class="red">b</li>
+            <li class="yellow">c</li>
+        </ul>
+        <ul class="flex-container2">
+            <li class="blue">d</li>
+            <li class="yellow">e</li>
+        </ul>
+        <ul class="flex-container3">
+            <li class="blue">f</li>
+            <li class="red">g</li>
+            <li class="yellow">h</li>
+        </ul>
+    </div>
+</body>
+</html>
