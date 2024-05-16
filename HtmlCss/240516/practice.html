@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            width: 1920px;
+            height: 1963px;
+            background-color: #5B2386;
+        }
+        .first{
+            position: absolute;
+            display: inline;
+            width: 486px;
+            height: 40px;
+            top: 510px;
+            left: 717px;
+            color: #F5DF4D;
+            font-size: 36px;
+            line-height: 39.6px;
+            text-align: center;
+            font-weight: 700;
+        }
+        .sfirst{
+            display:inline;
+            position: absolute;
+            width: 373px;
+            height: 85px;
+            top: 628px;
+            left: 774px;
+        }
+        .sfirst > p:first-child{
+            display: flex;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 24px;
+            text-align: center;
+            color: #FFFFFF;
+            
+        }
+        .sfirst > p:last-child{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 18px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .ssecond{
+            display: flex;
+            position:absolute;
+            width: 514px;
+            height: 57px;
+            top: 815px;
+            left: 703px;
+        }
+        .ssecond > div{
+            border-radius: 7px;
+            width: 228px;
+            height: 57px;
+            background-color:  #FFFFFF;
+        }
+        .ssecond > div > div{
+            padding: 20px;
+            width: 148px;
+            height: 24px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 24px;
+            text-align: center;
+        }
+        .ssecond > span:first-child{
+            width: 47px;
+            height: 24px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 16px;
+            color: #FFFFFF;
+        }
+        .ssecond > span:last-child{
+            width: 205px;
+            height: 24px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 24px;
+            color: #FFFFFF;
+        }
+        .sthird{
+            display: flex;
+            position:absolute;
+            width: 765px;
+            height: 57px;
+            top: 899px;
+            left: 578px;
+        }
+        .sthird span:first-child{
+            /* position: inherit;
+            width: 275px;
+            height: 24px; */
+            top: 916px;
+            left: 578px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 24px;
+            color: #FFFFFF;
+        }
+        .sthird span:last-child{
+            /* position: inherit;
+            width: 228px;
+            height: 24px; */
+            top: 916px;
+            left: 1115px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 24px;
+            color: #FFFFFF;
+        }
+        .bfirst{
+            position:absolute;
+            width: 565px;
+            height: 66px;
+            top: 1071px;
+            left: 678px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 24px;
+            text-align: center;
+            color: #5B2386;
+            background-color: #FCEE21;
+            border-radius: 56px;
+            border: 0;
+        }
+        .sfourth{
+            position:absolute;
+            /* display: flex; */
+            width: 663px;
+            height: 72px;
+            top: 1284px;
+            left: 629px;
+            display: flex;
+            gap: 16px;
+        }
+        .sfourth > p:first-child{
+            width: 70px;
+            height: 24px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 24px;
+            color: #FFFFFF;
+        }
+        .sfourth > p:nth-child(2){
+            width: 347px;
+            height: 72px;
+            font-size: 72px;
+            font-weight: 700;
+            line-height: 72px;
+            text-align: left;
+            color: #FFFFFF;
+        }
+        .sfourth > p:nth-child(3){
+            /* display: flex; */
+            width: 222px;
+            height: 24px;
+            gap: 0px;
+            opacity: 0px;
+            color: #FFFFFF;
+            /* font-family: Gmarket Sans; */
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+        }
+        .sfifth{
+            display: flex;
+            position: absolute;
+            width: 541px;
+            height: 72px;
+            top: 1373px;
+            left: 690px;
+            gap: 12px;
+        }
+        .sfifth > p:first-child{
+            width: 47px;
+            height: 24px;
+            gap: 0px;
+            /* font-family: Gmarket Sans; */
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color: #FFFFFF;
+        }
+        .sfifth > p:nth-child(2){
+            width: 168px;
+            height: 72px;
+            /* font-family: Gmarket Sans; */
+            font-size: 72px;
+            font-weight: 700;
+            line-height: 72px;
+            text-align: left;
+            color: #FFFFFF;
+        }
+        .sfifth > p:nth-child(3){
+            width: 302px;
+            height: 24px;
+            font-family: Gmarket Sans;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="" alt="">
+        <img src="" alt="">
+    </header>
+    <span class="first">"연습은 어제의 당신보다 당신을 더 낫게 만든다."</span>
+    <section class="sfirst">
+        <p>1만 시간의 법칙</p>
+        <p>은 <br>어떤 분야의 전문가가 되기 위해서는 <br>최소한 1만 시간의 훈련이 필요하다는 법칙이다.</p>
+    </section>
+    <section class="ssecond">
+        <span>나는</span> 
+        <!-- <input type="text" name="" id="" placeholder="예&#41프로그래밍"> -->
+        <div>
+            <div>예&#41프로그래밍</div>
+        </div>
+        <span>전문가가 될 것이다.</span> 
+    </section>
+    <section class="sthird">
+        <span>그래서 앞으로 매일 하루에</span>
+        <div>
+            <div>예&#41 5시간</div>
+        </div>
+        <!-- <input type="text" placeholder="예&#41 5시간"> -->
+        <span>시간씩 훈련할 것이다.</span> 
+    </section>
+    <button class="bfirst">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
+    <div>
+        <section class="sfourth">
+            <p>당신은</p>
+            <p>프로그래밍</p>
+            <p>전문가가 되기 위해서</p>
+        </section>
+        <section class="sfifth">
+            <p>대략</p>
+            <p>5110</p>    
+            <p>일 이상 훈련하셔야 합니다!:&#41</p>
+        </section>
+    </div>
+    <button class="bsecond">훈련하러 가기 GO!GO!</button>
+    <button class="bthird">공유하기</button>
+    <footer>
+        <img src="" alt="">
+        <span>본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.<br>
+            수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
+        </span>
+    </footer>
+</body>
+</html>
