@@ -78,7 +78,28 @@
         <section class="sub-mail">
             <img src="https://velog.velcdn.com/images/elma98/post/49b808a9-3e25-40fa-89dd-887aac2426a6/image.svg" alt=""> <!--이메일 아이콘-->
             <input type="text" name="" id="" placeholder="Enter your e-mail address">
-            <button>Subscribe</button>
+            <button id="modal-open-btn">Subscribe</button>
+            <div id="modal-container" class="hidden">
+                <div id="modal-content">
+                    <img src="https://velog.velcdn.com/images/elma98/post/cc48f19b-a277-4a1b-83b8-bfced4736291/image.png" alt="">
+                    <p id="modal-content-main">Thank you!</p>
+                    <p id="modal-content-sub">Lorem Ipsum is simply dummy text of the printing industry. </p>
+                    <button id="modal-close-btn">OK! I Love HODU</button>
+                </div>
+            </div>
+            <script>
+                const modalOpenButton = document.getElementById('modal-open-btn');
+                const modalCloseButton = document.getElementById('modal-close-btn');
+                const modal = document.getElementById('modal-container');
+
+                modalOpenButton.addEventListener('click', () => {
+                modal.classList.remove('hidden');
+                });
+
+                modalCloseButton.addEventListener('click', () => {
+                modal.classList.add('hidden');
+                }); 
+            </script>
         </section> <!--enter e-mail-->
     </div>
     <img src="https://velog.velcdn.com/images/elma98/post/0e2ae5b7-f8bb-4139-a03b-2cd16cf7a721/image.png" alt=""> <!--하단 왕큰 고양이 이미지-->
