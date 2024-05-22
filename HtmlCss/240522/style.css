@@ -4,6 +4,14 @@
     format("woff");
 }
 
+@font-face {
+  font-family: "MoveSans-Bold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/MoveSans-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,13 +21,13 @@
   position: absolute;
   width: 540px;
   height: 800px;
-  top: 215px;
+  top: 235px;
   left: 1100px;
 }
 
 .top {
-  width: 1640px;
-  height: 880px;
+  width: 1920px;
+  height: 902px;
   background-color: #f7e9cf;
 }
 
@@ -281,12 +289,59 @@ h3 + p {
   color: #606367;
 }
 
-#map {
-  width: 1278px;
-  height: 520px;
+#slider {
+  position: relative;
+  overflow: hidden;
+  width: 1278px; /*3834*/
+  height: 520px; /*1560*/
   margin-top: 48px;
   margin-left: 320px;
-  /* border: solid 1px black; */
+  border: solid 1px black;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slider 12s infinite linear;
+}
+
+.slide:nth-child(1) {
+  background-image: url("https://velog.velcdn.com/images/elma98/post/0648f9cd-55e9-4570-9a29-3fcd6b370994/image.jpeg");
+  animation-delay: 0;
+}
+.slide:nth-child(2) {
+  background-image: url("https://velog.velcdn.com/images/elma98/post/c40f82f1-730d-42af-a5ca-06bc1ce0a4f2/image.jpeg");
+  animation-delay: -4s;
+}
+.slide:nth-child(3) {
+  background-image: url("https://velog.velcdn.com/images/elma98/post/3d13032f-b7fb-4ca2-9d1f-ee2d6a71c7d0/image.jpeg");
+  animation-delay: -8s;
+}
+
+@keyframes slider {
+  0% {
+    transform: translateX(0);
+  }
+
+  26% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-100%);
+    animation-timing-function: step-end;
+  }
+  93% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .subscribe {
@@ -376,11 +431,12 @@ h3 + p {
 }
 
 .bao-footer-img {
-  width: 1640px;
-  height: 340px;
-  margin-top: 181px;
+  width: 1920px;
+  height: 475px;
+  margin-top: 310px;
+  /* margin-left: 120px; */
   /* opacity: 0.8; */
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .scroll-up-btn {
@@ -448,30 +504,30 @@ footer {
 }
 
 #modal-content {
-  background-image: url(https://velog.velcdn.com/images/elma98/post/5733b27e-5182-485d-8370-20721517629d/image.png);
-  width: 600px;
-  height: 400px;
+  background-image: url("https://velog.velcdn.com/images/elma98/post/44fbbbd2-daba-4e95-bdac-cf145480177c/image.jpeg");
+  width: 650px;
+  height: 1000px;
   border-radius: 30px;
 }
 
 #modal-content > img {
-  width: 110px;
-  height: 112px;
-  margin-top: 60px;
-  margin-left: 245px;
+  width: 210px;
+  height: 297.5px;
+  margin-top: 190px;
+  margin-left: 225px;
 }
 
 #modal-content-main {
   width: 212px;
   height: 46px;
-  margin-top: 24px;
-  margin-left: 194px;
-  font-family: "Pretendard-Regular";
-  font-size: 36px;
+  margin-top: 350px;
+  margin-left: 224px;
+  font-family: "MoveSans-Bold";
+  font-size: 30px;
   font-weight: 700;
   line-height: 45px;
   text-align: center;
-  color: #c37890;
+  color: #ffffff;
 }
 
 #modal-content-sub {
@@ -479,7 +535,7 @@ footer {
   height: 18px;
   margin-top: 12px;
   margin-left: 108px;
-  font-family: "Pretendard-Regular";
+  font-family: "MoveSans-Bold";
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -489,12 +545,12 @@ footer {
 #modal-close-btn {
   width: 183px;
   height: 50px;
-  margin-top: 38px;
-  margin-left: 205px;
+  margin-top: 35px;
+  margin-left: 225px;
   border-radius: 40px;
   border: 0;
   background-color: #c37890;
-  font-family: "Pretendard-Regular";
+  font-family: "MoveSans-Bold";
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
