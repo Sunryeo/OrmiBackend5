@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top">
+        <img src="https://velog.velcdn.com/images/elma98/post/5a46344f-b216-4f2e-a939-430657959629/image.png" alt="" class="bao-main"> <!--메인 고양이 이미지-->
+        <nav>
+            <img src="https://velog.velcdn.com/images/elma98/post/2e60545e-960f-4667-9e98-c5b7cb3bf842/image.png" alt="" class="logo-top1"> <!--로고 이미지-->
+            <img src="https://velog.velcdn.com/images/elma98/post/7924dfc7-aebf-4d3f-9ab4-c610bf75c17e/image.jpeg" alt="" class="logo-top2">
+            <section class="top-nav-element">
+                <button>Home</button>
+                <button>About</button>
+                <button>Support</button>
+            </section>
+            <button class="download-btn">Download</button>
+        </nav>
+        <p class="top-text-box-main">Bao is the best</p>
+        <p class="top-text-box-sub">Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown</p>
+        <button class="download-btn">Download</button>
+    </div>
+    <div class="middle">
+        <img src="https://velog.velcdn.com/images/elma98/post/8f7a3ed7-323d-47df-8658-12343ea706dd/image.jpeg" alt="" class="img_1"> <!--고양이 img_1-->
+        <div>
+            <p class="middle-text-box-main">Lorem Ipsum is simply
+                dummy text of the printing and dummy text</p>
+            <p class="middle-text-box-sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+    </div>
+    <h2>dummy text of the printing and dummy</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+    <ul class="img-frame-1">
+        <li>
+            <img src="https://velog.velcdn.com/images/elma98/post/e41f66ba-164b-49cc-8996-ea891db83af3/image.jpeg" alt="">
+        </li>
+        <li>
+            <img src="https://velog.velcdn.com/images/elma98/post/2234293d-7257-4f24-a1b0-af2fbff1a900/image.jpeg" alt="">
+        </li>
+        <li>
+            <img src="https://velog.velcdn.com/images/elma98/post/8e70e3d6-c6e5-4010-b745-96997ef4caec/image.jpeg" alt="">
+        </li>
+    </ul> <!--고양이 이미지 첫 섹션 3개-->
+    <ul class="img-frame-2">
+        <li>
+            <img src="https://velog.velcdn.com/images/elma98/post/c95ee561-790c-477f-aa51-a12c97260cc2/image.jpeg" alt="">
+        </li>
+        <li>
+            <img src="https://velog.velcdn.com/images/elma98/post/6420eb0f-f3a6-45bb-a7ff-ce7d4683ddb9/image.jpeg" alt="">
+        </li>
+        <li>
+            <img src="https://velog.velcdn.com/images/elma98/post/2d32b1c0-4a91-4bc9-8316-74935f8e36fb/image.jpeg" alt="">
+        </li>
+    </ul> <!--고양이 이미지 두 번째 섹션 3개-->
+    <section class="low-text-frame">
+        <p>Continue exploring BAO</p>
+        <button>Show more</button> <!--이미지 추가 로딩-->
+    </section>
+    <div></div>
+    <h3>Where you'll be</h3>
+    <p>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+    <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.2671261224914!2d126.5714548!3d33.4423464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350cfdb22ad3cce3%3A0x1321aebb880d1b1!2z7KCc7KO87Yq567OE7J6Q7LmY64-EIOygnOyjvOyLnCDssqjri6jroZwgMzMw!5e0!3m2!1sko!2skr!4v1716189111838!5m2!1sko!2skr" width="1278" height="520" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="subscribe">
+        <section class="sub-text-group"> <!--text group-->
+            <p>Subscribe to our Blog post</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textt</p>
+        </section>
+        <section class="sub-mail">
+            <img src="https://velog.velcdn.com/images/elma98/post/49b808a9-3e25-40fa-89dd-887aac2426a6/image.svg" alt=""> <!--이메일 아이콘-->
+            <input type="text" name="" id="" placeholder="Enter your e-mail address">
+            <button id="modal-open-btn">Subscribe</button>
+            <div id="modal-container" class="hidden">
+                <div id="modal-content">
+                    <img src="https://velog.velcdn.com/images/elma98/post/cc48f19b-a277-4a1b-83b8-bfced4736291/image.png" alt="">
+                    <p id="modal-content-main">Thank you!</p>
+                    <p id="modal-content-sub">Lorem Ipsum is simply dummy text of the printing industry. </p>
+                    <button id="modal-close-btn">OK! I Love BAO</button>
+                </div>
+            </div>
+            <script>
+                const modalOpenButton = document.getElementById('modal-open-btn');
+                const modalCloseButton = document.getElementById('modal-close-btn');
+                const modal = document.getElementById('modal-container');
+
+                modalOpenButton.addEventListener('click', () => {
+                modal.classList.remove('hidden');
+                });
+
+                modalCloseButton.addEventListener('click', () => {
+                modal.classList.add('hidden');
+                }); 
+            </script>
+        </section> <!--enter e-mail-->
+    </div>
+    <img src="https://velog.velcdn.com/images/elma98/post/b6c5f647-667d-452a-8506-ee7090e25382/image.jpeg" alt="" class="bao-footer-img"> <!--하단 왕큰 고양이 이미지-->
+    <button type="button" onclick="scrollTopFixed()" class="scroll-up-btn">
+        <img src="https://velog.velcdn.com/images/elma98/post/3a9aec01-424c-44f1-8d48-56e451ae76f1/image.png" alt="">
+    </button>
+    <footer>
+        <img src="https://velog.velcdn.com/images/elma98/post/2e60545e-960f-4667-9e98-c5b7cb3bf842/image.png" alt="" class="logo-footer"> <!--footer logo-->
+        <section class="icon-group">
+            <img src="https://velog.velcdn.com/images/elma98/post/6d999276-78f1-45b5-a49f-7b61ddd72281/image.png" alt="blog">
+            <a href="https://www.instagram.com/bbaoyam/">
+                <img src="https://velog.velcdn.com/images/elma98/post/2f163a64-27c6-4bf2-86e9-ac832c68f554/image.png" alt="insta">
+            </a>
+            <img src="https://velog.velcdn.com/images/elma98/post/7bb21c31-3aea-4b2c-abbf-0bd4ebb1fcd9/image.png" alt="facebook">
+            <img src="https://velog.velcdn.com/images/elma98/post/e51357cf-246d-479b-b445-7590a7a7cf60/image.png" alt="youtube">
+        </section> <!--우측 아이콘 그룹-->
+    </footer>
+</body>
+</html>
