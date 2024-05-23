@@ -377,11 +377,11 @@ h3 + p {
 }
 
 .scroll-up-btn {
-  position: absolute;
+  position: relative;
   width: 50px;
   height: 50px;
   left: 1846px;
-  top: 4006px;
+  top: -69px;
   border: 0;
   background-color: #f2e9d899;
   opacity: 80%;
@@ -389,11 +389,11 @@ h3 + p {
 
 .scroll-up-btn:hover {
   background-image: url("https://velog.velcdn.com/images/elma98/post/14359421-4299-40dc-b545-ce09523967cc/image.png");
-  position: absolute;
+  position: relative;
   width: 50px;
   height: 50px;
   left: 1846px;
-  top: 4006px;
+  top: -69px;
   border: 0;
 }
 
