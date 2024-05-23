@@ -91,10 +91,10 @@
                     const newImage = document.createElement("img");
                     newImage.src = `https://picsum.photos/378?random=${randomInt}`;
                     newImage.alt = "";
-                    newImage.style.cssText = 'width: 378px; height: 378px; border-radius: 30px;';
+                    newImage.style.cssText = 'width: 378px; height: 378px; border-radius: 30px; filter: drop-shadow(10px 10px 6px #c3c3c3);';
                     
                     newLi.appendChild(newImage);
-                    newUl.appendChild(newList);
+                    newUl.appendChild(newLi);
                     container.appendChild(newUl);
                 }
             })
