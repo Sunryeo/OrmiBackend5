@@ -50,31 +50,55 @@
     </div>
     <h2>dummy text of the printing and dummy</h2>
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
-    <ul class="img-frame-1">
-        <li>
-            <img src="https://velog.velcdn.com/images/elma98/post/080b5bba-ee0f-4c03-9443-a66bfc77ffd8/image.png" alt="">
-        </li>
-        <li>
-            <img src="https://velog.velcdn.com/images/elma98/post/4bf4b84e-2a99-47f0-b950-6308001a9459/image.png" alt="">
-        </li>
-        <li>
-            <img src="https://velog.velcdn.com/images/elma98/post/15598ad1-ab97-4b74-b261-5f798d1f98ca/image.png" alt="">
-        </li>
-    </ul> <!--고양이 이미지 첫 섹션 3개-->
-    <ul class="img-frame-2">
-        <li>
-            <img src="https://velog.velcdn.com/images/elma98/post/0960583f-1352-42e5-9545-7615092624f2/image.png" alt="">
-        </li>
-        <li>
-            <img src="https://velog.velcdn.com/images/elma98/post/688b2b57-3922-4c11-b7cf-ac06c52187bb/image.png" alt="">
-        </li>
-        <li>
-            <img src="https://velog.velcdn.com/images/elma98/post/702562a9-b07e-46e3-b0f0-9639aa4c65fc/image.png" alt="">
-        </li>
-    </ul> <!--고양이 이미지 두 번째 섹션 3개-->
+    <section id="img-container">
+        <ul class="img-frame-1">
+            <li>
+                <img src="https://velog.velcdn.com/images/elma98/post/080b5bba-ee0f-4c03-9443-a66bfc77ffd8/image.png" alt="">
+            </li>
+            <li>
+                <img src="https://velog.velcdn.com/images/elma98/post/4bf4b84e-2a99-47f0-b950-6308001a9459/image.png" alt="">
+            </li>
+            <li>
+                <img src="https://velog.velcdn.com/images/elma98/post/15598ad1-ab97-4b74-b261-5f798d1f98ca/image.png" alt="">
+            </li>
+        </ul> <!--고양이 이미지 첫 섹션 3개-->
+        <ul class="img-frame-2">
+            <li>
+                <img src="https://velog.velcdn.com/images/elma98/post/0960583f-1352-42e5-9545-7615092624f2/image.png" alt="">
+            </li>
+            <li>
+                <img src="https://velog.velcdn.com/images/elma98/post/688b2b57-3922-4c11-b7cf-ac06c52187bb/image.png" alt="">
+            </li>
+            <li>
+                <img src="https://velog.velcdn.com/images/elma98/post/702562a9-b07e-46e3-b0f0-9639aa4c65fc/image.png" alt="">
+            </li>
+        </ul> <!--고양이 이미지 두 번째 섹션 3개-->
+    </section>
     <section class="low-text-frame">
         <p>Continue exploring HODU</p>
-        <button>Show more</button> <!--이미지 추가 로딩-->
+        <button id="show-more-btn">Show more</button> <!--이미지 추가 로딩-->
+        <script>
+            const button = document.getElementById('show-more-btn');
+            const container = document.getElementById('img-container');
+            button.addEventListener('click', () => {
+                const newUl = document.createElement('ul');
+                newUl.style.cssText = "display: flex; width: 1278px; height: 378px; margin-top: 85px; margin-left: 337px;gap: 72px;";
+                for(let i = 0; i < 3; i++) {
+                    const randomInt = Math.floor(Math.random() * 100);
+                    const newLi = document.createElement("li");
+                    newLi.style.cssText = 'list-style: none;'
+
+                    const newImage = document.createElement("img");
+                    newImage.src = `https://picsum.photos/378?random=${randomInt}`;
+                    newImage.alt = "";
+                    newImage.style.cssText = 'width: 378px; height: 378px; border-radius: 30px;';
+                    
+                    newLi.appendChild(newImage);
+                    newUl.appendChild(newList);
+                    container.appendChild(newUl);
+                }
+            })
+        </script>
     </section>
     <div></div>
     <h3>Where you'll be</h3>

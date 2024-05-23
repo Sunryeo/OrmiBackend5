@@ -183,8 +183,12 @@ h2 + p {
   gap: 72px;
 }
 
+/* .img-frame-1 li {
+  list-style: none;
+} */
+
 .img-frame-1 li {
-  list-style-type: none;
+  list-style: none;
   width: 378px;
   height: 378px;
   border-radius: 30px;
@@ -198,9 +202,13 @@ h2 + p {
   margin-left: 320px;
   gap: 72px;
 }
+/* 
+.img-frame-2 li {
+  list-style: none;
+} */
 
 .img-frame-2 li {
-  list-style-type: none;
+  list-style: none;
   width: 378px;
   height: 378px;
   border-radius: 30px;
