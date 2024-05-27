@@ -68,7 +68,7 @@
     <section class="low-text-frame">
         <p>Continue exploring HODU</p>
         <button id="show-more-btn">Show more</button> <!--이미지 추가 로딩-->
-        <script>
+        <!-- <script>
             const button = document.getElementById('show-more-btn');
             const container = document.getElementById('img-container');
             button.addEventListener('click', () => {
@@ -85,6 +85,7 @@
                     const requestQuery = `?tag=${tagList[randomInt]}&width=378&height=378`;
                     newImage.src = requestUrl + requestQuery;
                     // picsum url: `https://picsum.photos/378?random=${randomInt}`
+                    
                     newImage.alt = "";
                     newImage.style.cssText = 'width: 378px; height: 378px; border-radius: 30px; filter: drop-shadow(10px 10px 6px #c3c3c3);';
                     
@@ -93,6 +94,40 @@
                     container.appendChild(newUl);
                 }
             })
+        </script> -->
+        <script>
+            const button = document.getElementById('show-more-btn');
+            const container = document.getElementById('img-container');
+            button.addEventListener('click', () => {
+                const newUl = document.createElement('ul');
+                newUl.style.cssText = "display: flex; width: 1278px; height: 378px; margin-top: 85px; margin-left: 337px;gap: 72px;";
+                const randomInt = Math.floor(Math.random() * 10);
+
+                fetch(`https://picsum.photos/v2/list?page=${randomInt}&limit=3`)
+                .then((res) => {
+                    res = res.json();
+                    return res;
+                })
+                .then((data) => {
+                    console.log("data: ", data)
+                    for(let i = 0; i < 3; i++) {
+                    const newLi = document.createElement("li");
+                    newLi.style.cssText = 'list-style: none;'
+
+                    const newImage = document.createElement("img");
+                    newImage.src = data[i].download_url;
+                    newImage.alt = "";
+                    newImage.style.cssText = 'width: 378px; height: 378px; border-radius: 30px; filter: drop-shadow(10px 10px 6px #c3c3c3);';
+                    newLi.appendChild(newImage);
+                    newUl.appendChild(newLi);
+                }
+                    container.appendChild(newUl);
+                })
+                .catch((e) => {
+                    console.log(e);
+                })
+            })
+            
         </script>
     </section>
     <div></div>
